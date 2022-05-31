@@ -1,0 +1,22 @@
+.MobHeader{
+    z-index: 4;
+.mobNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    .logo{
+        img{
+            width: 130px;
+        }
+    }
+    .mobNAv_btn{
+         a{
+             i{
+                 font-size: 28px;
+                 color: $black;
+             }
+         }
+    }
+}
+}

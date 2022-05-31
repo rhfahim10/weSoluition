@@ -1,0 +1,147 @@
+.appointment{
+    opacity: 0;
+    position: fixed;
+    bottom: -400px;
+    right: 0;
+    .appointment_wrapper{
+        height: 500px;
+        width: 390px;
+        background-color: #9a97e7;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 1px 1.332px 4px 2px #7c7c7c4d;
+        .appointment_wrap{
+            padding: 20px 30px;
+            .appointment_top{
+                position: relative;
+                cursor: pointer;
+                .close{
+                    position: absolute;
+                    right: 0;
+                    i{
+                        font-size: 28px;
+                        color: $white;
+                        cursor: pointer;
+                        &:hover{
+                            color: $black;
+                        }
+                    }
+                }
+                h4{
+                    font-size: 23px;
+                    color: rgb(34, 34, 34);
+                    font-weight: 600;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                .headingStyle{
+                    position: relative;
+                    background-color: $primaryColor;
+                    height: 5px;
+                    width: 90px;
+                    border-radius: 30px;
+                    margin: 15px auto;
+                    &::after{
+                            background-color: $white;
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: -2.7px;
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 50%;
+                            -webkit-animation-duration: 3s;
+                            animation-duration: 3s;
+                            -webkit-animation-timing-function: linear;
+                            animation-timing-function: linear;
+                            -webkit-animation-iteration-count: infinite;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate-reverse;
+                            -webkit-animation-direction: alternate-reverse;
+                            -webkit-animation-name: watermark-animate;
+                            animation-name: watermark-animate;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    color: $white;
+                    font-weight: 400;
+                    text-align: center;
+                    line-height: 26px;
+                    padding: 7px 0 0 0;
+                }
+            }
+            .appointment_form{
+                .form_control{
+                    display: block;
+                    width: 100%;
+                    height: 45px;
+                    font-size: 15px;
+                    color: rgb(29, 28, 28);
+                    padding:22px;
+                    background-color:#fff;
+                    background-clip: padding-box;
+                    border: 1px solid #cfcfcf;
+                    border-radius: 5px;
+                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &:focus{
+                       outline: 0;
+                   } 
+                    &::placeholder{
+                        font-size: 15px;
+                        color: #bdbbbb;
+                        font-weight: 400;
+                    }
+                }
+                textarea{
+                    height: 110px !important;
+                    &::placeholder{
+                        font-size: 14px !important;
+                    }
+                }
+                .sentBtn{
+                    text-align: center;
+                    margin-top: 20px;
+                    background-color: #8230a3;
+                    width: 100%;
+                    height: 45px;
+                    cursor: pointer;
+                    a{
+                        line-height: 45px;
+                        color: $white;
+                        font-size: 18px;
+                        font-weight: 500;
+                        border-radius: 6px;
+                        -webkit-border-radius: 6px;
+                        -moz-border-radius: 6px;
+                        -ms-border-radius: 6px;
+                        -o-border-radius: 6px;
+}
+                }
+            }
+        }
+}
+}
+.appointmentNewClass{
+    opacity: 1;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    transition: all linear 1s;
+    z-index: 2;
+    transition: all 0.7s ease-in-out;
+}
+
+.appointmentNewClass3{
+    position: fixed;
+    bottom: -430px;
+    right: 20px;
+}
